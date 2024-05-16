@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mNk7tOSvgaOA25mQDUieG17KpBbCqOVdflzhSDQyryjm30sCROCEvgj29g3Bdm35hh4HSK43tizucWfHGzCzWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.calculadora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

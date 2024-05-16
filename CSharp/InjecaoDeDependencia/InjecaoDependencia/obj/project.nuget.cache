@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "tkek/Fv2vqPJavaVD+I7rJb+KckGoIh15aeK5c4wbIXzr9L9gLh9W6zM36lUo3wqTbOOZerPaGktI7k/iQZ1dA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia\\InjecaoDependencia.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

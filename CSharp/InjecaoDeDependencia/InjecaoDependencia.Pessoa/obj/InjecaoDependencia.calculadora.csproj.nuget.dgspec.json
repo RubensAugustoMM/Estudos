@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.calculadora.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.calculadora.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.calculadora.csproj",
-        "projectName": "InjecaoDependencia.calculadora",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.Calculadora.csproj",
+        "projectName": "InjecaoDependencia.Calculadora",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\InjecaoDependencia.Calculadora.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Pessoa\\obj\\",
         "projectStyle": "PackageReference",
@@ -49,6 +49,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

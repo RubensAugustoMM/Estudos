@@ -1,24 +1,30 @@
 ﻿namespace InjecaoDependencia.Calculadora;
 
-public interface ICalculadora
+public interface ICalculador
 {
-    /*
-    public decimal adicao();
-    public decimal subtracao();
-    public decimal divisao();
-    public decimal multiplicacao();
-    */
-}
-public class Calculadora : ICalculadora 
-{
-    /*
-    public decimal adicao()
-    {
-        return 1;
-    }
-    public decimal subtracao()
+    public decimal adicao(decimal i, decimal j);
+    public decimal subtracao(decimal i, decimal j);
+    public decimal divisao(decimal i, decimal j);
+    public decimal multiplicacao(decimal i, decimal j);
 
-    public decimal divisao();
-    public decimal multiplicacao();
-    */
+}
+public class Calculador : ICalculador 
+{
+    public decimal adicao(decimal i,decimal j)
+    {
+        return i;
+    }
+    public decimal subtracao(decimal i, decimal j)
+    {
+        return j;
+    }
+
+    public decimal divisao(decimal i, decimal j)
+    {
+        return i;
+    }
+    public decimal multiplicacao(decimal i, decimal j)
+    {
+        return j;
+    }
 }

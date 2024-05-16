@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using InjecaoDependencia.Calculadora;
 
 namespace InjecaoDependencia.Testes;
 
@@ -13,29 +14,7 @@ public class ModuloInjetor
 
      public ServiceProvider ConstroiServiceProvider()
      {
-      _servico.AddTransient<ICalculadora, Calculadora>();
+      _servico.AddTransient<ICalculador, Calculador>();
         return _servico.BuildServiceProvider();
      }
-}
-public interface ICalculadora
-{
-    /*
-    public decimal adicao();
-    public decimal subtracao();
-    public decimal divisao();
-    public decimal multiplicacao();
-    */
-}
-public class Calculadora : ICalculadora 
-{
-    /*
-    public decimal adicao()
-    {
-        return 1;
-    }
-    public decimal subtracao()
-
-    public decimal divisao();
-    public decimal multiplicacao();
-    */
 }

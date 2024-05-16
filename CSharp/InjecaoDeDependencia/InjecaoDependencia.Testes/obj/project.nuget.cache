@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "69/B52NJO8QZalJiVaS2Zs9gXYHwfyyZueomuIV0Kaep6ihRV6v7PJSpTsgQ+d0btK9OaopufwriBSRxEKuJEw==",
+  "dgSpecHash": "711UTDHXmdV4wNOrdHzEy7+DAUvwsOZ0sABzGw5fAvgRCtgh54yhvk50GxFv/d0SL9LAtpILEHtHYsX0ES6RPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Estudos\\CSharp\\InjecaoDeDependencia\\InjecaoDependencia.Testes\\InjecaoDependencia.Testes.csproj",
   "expectedPackageFiles": [
@@ -95,9 +95,9 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\xunit.extensibility.core\\2.5.3\\xunit.extensibility.core.2.5.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,20 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using InjecaoDependencia.Calculadora;
+using InjecaoDependencia.Calculadora.Servicos;
 
 namespace InjecaoDependencia.Testes;
 
-public class ModuloInjetor 
+public static class ModuloInjetor
 {
-     private ServiceCollection _servico; 
-
-     public ModuloInjetor()
-     {
-        _servico = new ServiceCollection();
-     }
-
-     public ServiceProvider ConstroiServiceProvider()
-     {
-      _servico.AddTransient<ICalculador, Calculador>();
-        return _servico.BuildServiceProvider();
-     }
+   public static void InjetaDependencia(ServiceCollection Servicos)
+   {
+      Servicos.AddScoped<IServicoProduto, ServicoProduto>();
+   }
 }

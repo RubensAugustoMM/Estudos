@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System.ComponentModel;
 using System;
 using Xunit;
 using InjecaoDependencia.Calculadora;
+using Moq;
+using InjecaoDependencia.Calculadora.Servicos;
 
 namespace InjecaoDependencia.Testes;
 
@@ -12,19 +13,21 @@ public class TesteBase : IDisposable
 
     public TesteBase()
     {
-        var ModuloInjetor = new ModuloInjetor();
-        serviceProvider = ModuloInjetor.ConstroiServiceProvider();
-    }
+        ServiceCollection servicos = new ServiceCollection();
+        ModuloInjetor.InjetaDependencia(servicos);
+        serviceProvider = servicos.BuildServiceProvider();
+    } 
 
     [Fact]
-    public void Calculador32adiciona8()
+    public void TestTestasda()
     {
-        var adicinador = serviceProvider.GetService<ICalculador>();
-        decimal resultado = adicinador.adicao(2, 3);
+        var coisa = serviceProvider.GetService<IServicoProduto>();
 
-        Assert.Equal(resultado, 8);
+        int resultado = coisa.RetornaId();
+        
+
+        Assert.Equal(1231241414213412, resultado);
     }
-
     public void Dispose()
     {
         serviceProvider.Dispose(); 

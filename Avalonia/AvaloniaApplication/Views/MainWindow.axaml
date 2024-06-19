@@ -15,13 +15,16 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <StackPanel Width="200" Margin = "16" Spacing ="10">
-        <Rectangle Fill="Red" Height="50"/>
+    <StackPanel Width="200" Margin = "16" Spacing ="10" VerticalAlignment="Center">
+        <!--<Rectangle Fill="Red" Height="50"/>
         <Rectangle Fill="Blue" Height="50"/>
         <Rectangle Fill="Green" Height="100"/>
-        <Rectangle Fill="Orange" Height="50"/>
-        <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button>CLICK ME</Button>
+        <Rectangle Fill="Orange" Height="50"/>-->
+        <TextBlock Name="{Binding TextBlockName}" 
+			       Text="Welcome to Avalonia!" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"/>
+        <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding ButtonOnClick}">CLICK ME</Button>
     </StackPanel>
 
 </Window>

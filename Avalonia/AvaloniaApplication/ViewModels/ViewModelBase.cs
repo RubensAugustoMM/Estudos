@@ -1,7 +1,5 @@
-﻿using ReactiveUI;
+﻿namespace AvaloniaApplication.ViewModels;
 
-namespace AvaloniaApplication.ViewModels;
-
-public class ViewModelBase : ReactiveObject
+public class ViewModelBase
 {
 }

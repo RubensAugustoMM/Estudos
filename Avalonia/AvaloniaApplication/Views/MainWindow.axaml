@@ -20,11 +20,11 @@
         <Rectangle Fill="Blue" Height="50"/>
         <Rectangle Fill="Green" Height="100"/>
         <Rectangle Fill="Orange" Height="50"/>-->
-        <TextBlock Name="{Binding TextBlockName}" 
-			       Text="Welcome to Avalonia!" 
+        <TextBlock Name="TextBlock" 
+			       Text="{Binding TextBlockName}" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center"/>
-        <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding ButtonOnClick}">CLICK ME</Button>
+        <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding OnButtonClick}">CLICK ME</Button>
     </StackPanel>
 
 </Window>

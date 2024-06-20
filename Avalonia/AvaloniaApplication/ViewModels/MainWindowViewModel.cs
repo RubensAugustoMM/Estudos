@@ -24,7 +24,7 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
 
-    public void ButtonOnClick()
+    public void OnButtonClick()
     {
         TextBlockName = "oi";
     }

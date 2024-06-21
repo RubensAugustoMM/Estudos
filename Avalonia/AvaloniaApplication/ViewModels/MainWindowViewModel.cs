@@ -1,31 +1,42 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using System;
+using System.Collections.ObjectModel;
 
 namespace AvaloniaApplication.ViewModels;
 
-public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
+public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting => "Welcome to Avalonia!";
-    public event PropertyChangedEventHandler? PropertyChanged;
+    [ObservableProperty]
+    private bool _isPaneOpen = false;
 
-    protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+    [ObservableProperty]
+    private ViewModelBase _currentPage = new HomePageViewModel();
+
+    [ObservableProperty]
+    private ListItemTemplate? _selectedListItem;
+
+    public ObservableCollection<ListItemTemplate> Items { get; } = new()
     {
-        PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(propertyName));
+        new ListItemTemplate(typeof(HomePageViewModel)),
+        new ListItemTemplate(typeof(ButtonPageViewModel))
+    };
+
+    [RelayCommand]
+    private void TriggerPane()
+    {
+        IsPaneOpen = !IsPaneOpen;
+    }
+} 
+
+public class ListItemTemplate
+{
+    public ListItemTemplate(Type type) 
+    {
+        ModelType = type;
+        Label = type.Name.Replace("PageViewModel", "");
     }
 
-    private string _textBlockName = "Welcome to Avalonia!"; //baking field
-    public string TextBlockName  //property name
-    {
-        get => _textBlockName;
-        set
-        {
-            _textBlockName = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public void OnButtonClick()
-    {
-        TextBlockName = "oi";
-    }
+    public string Label { get; }
+    public Type ModelType { get; }
 }

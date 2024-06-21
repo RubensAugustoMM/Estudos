@@ -1,5 +1,10 @@
-﻿namespace AvaloniaApplication.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
-public class ViewModelBase
+namespace AvaloniaApplication.ViewModels;
+
+public class ViewModelBase : ObservableObject
 {
+
 }
